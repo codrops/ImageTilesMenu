@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Image Tiles Menu Animation | Codrops</title>
+		<meta name="description" content="An animation featuring image tiles that transform into a full image when a menu item is clicked.">
+		<meta name="keywords" content="animation, menu, image, gsap, page transition">
+		<meta name="author" content="Codrops">
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://use.typekit.net/gmc0vlm.css">
+		<link rel="stylesheet" type="text/css" href="css/base.css">
+		<link rel="stylesheet" href="css/splitting.css" />
+		<link rel="stylesheet" href="css/splitting-cells.css" />
+		<script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
+		<script src="//tympanus.net/codrops/adpacks/analytics.js"></script>
+	</head>
+	<body class="demo-1 loading">
+		<main>
+			<div class="frame">
+				<div class="frame__title">
+					<h1 class="frame__title-main">Image Tiles Menu Animation</h1>
+					<a aria-label="Back to the article" class="frame__title-back" href="https://tympanus.net/codrops/?p=">
+						<span class="oh__inner">Back to the article</span> 
+						<svg width="18px" height="18px" viewBox="0 0 24 24">
+							<path vector-effect="non-scaling-stroke" d="M18.25 15.5a.75.75 0 00.75-.75v-9a.75.75 0 00-.75-.75h-9a.75.75 0 000 1.5h7.19L6.22 16.72a.75.75 0 101.06 1.06L17.5 7.56v7.19c0 .414.336.75.75.75z"></path>
+						</svg>
+					</a>
+				</div>
+				<a class="frame__prev" href="">Previous demo</a>
+			</div>
+			<div class="thumbgrid-wrap">
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-1">
+						<div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-2">
+						<div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-3">
+						<div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-4">
+						<div class="thumbgrid__item-img" style="background-image: url(img/1.jpg)"></div>
+					</div>
+				</div>
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-5">
+						<div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-6">
+						<div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-7">
+						<div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-8">
+						<div class="thumbgrid__item-img" style="background-image: url(img/2.jpg)"></div>
+					</div>
+				</div>
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-9">
+						<div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-10">
+						<div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-11">
+						<div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-12">
+						<div class="thumbgrid__item-img" style="background-image: url(img/3.jpg)"></div>
+					</div>
+				</div>
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-13">
+						<div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-14">
+						<div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-15">
+						<div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-16">
+						<div class="thumbgrid__item-img" style="background-image: url(img/4.jpg)"></div>
+					</div>
+				</div>
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-17">
+						<div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-18">
+						<div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-19">
+						<div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-20">
+						<div class="thumbgrid__item-img" style="background-image: url(img/5.jpg)"></div>
+					</div>
+				</div>
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-21">
+						<div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-22">
+						<div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-23">
+						<div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-24">
+						<div class="thumbgrid__item-img" style="background-image: url(img/6.jpg)"></div>
+					</div>
+				</div>
+				<div class="thumbgrid">
+					<div class="thumbgrid__item pos-25">
+						<div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-26">
+						<div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-27">
+						<div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+					</div>
+					<div class="thumbgrid__item pos-28">
+						<div class="thumbgrid__item-img" style="background-image: url(img/7.jpg)"></div>
+					</div>
+				</div>
+			</div>
+			<div class="content-wrap">
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>H</i>ydr<i>O</i>asis</h2>
+					<p class="content__desc">Refreshing beverage infused with electrolytes and nootropics to boost mental clarity.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/7.jpg)"></div>
+						</div>
+						<div class="thumbgrid"><!-- menu images get flipped over here--></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/2.jpg)"></div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>A</i>lga<i>Z</i>en</h2>
+					<p class="content__desc">A drink made from a mix of algae and other superfoods that provide sustained energy and boost the immune system.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/1.jpg)"></div>
+						</div>
+						<div class="thumbgrid"></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/3.jpg)"></div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>N</i>euro<i>B</i>oost</h2>
+					<p class="content__desc">A cognitive enhancing drink infused with adaptogens, nootropics, and vitamins to enhance focus and mental clarity.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/2.jpg)"></div>
+						</div>
+						<div class="thumbgrid"></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/4.jpg)"></div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>E</i>co<i>E</i>levate</h2>
+					<p class="content__desc">A plant-based energy drink made with maca, matcha, and other plant-based ingredients that help to increase energy levels and reduce stress.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/3.jpg)"></div>
+						</div>
+						<div class="thumbgrid"></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/5.jpg)"></div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>H</i>erba<i>V</i>igor</h2>
+					<p class="content__desc">A natural energy drink made with ginseng, green tea, and other herbal extracts that help increase endurance and reduce fatigue.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/4.jpg)"></div>
+						</div>
+						<div class="thumbgrid"></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/6.jpg)"></div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>O</i>hm<i>A</i>lchemy</h2>
+					<p class="content__desc">A healthy drink made with spirulina, chlorella, and other green superfoods that help detoxify the body and boost energy.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/5.jpg)"></div>
+						</div>
+						<div class="thumbgrid"></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/7.jpg)"></div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<button class="content__back unbutton">&larr; back</button>
+					<h2 class="content__title"><i>F</i>ruit<i>F</i>use</h2>
+					<p class="content__desc">A fruity drink infused with vitamins and antioxidants that helps to protect the skin from UV damage.</p>
+					<div class="content__images">
+						<div class="thumb thumb--prev">
+							<div class="thumb__inner" style="background-image: url(img/6.jpg)"></div>
+						</div>
+						<div class="thumbgrid"></div>
+						<div class="thumb thumb--next">
+							<div class="thumb__inner" style="background-image: url(img/8.jpg)"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="menu">
+				<a class="menu__item">
+					<span class="menu__item-title"><i>H</i>ydr<i>O</i>asis</span>
+					<span class="menu__item-desc">Refreshing beverage infused with electrolytes and nootropics to boost mental clarity</span>
+				</a>
+				<a class="menu__item">
+					<span class="menu__item-title"><i>A</i>lga<i>Z</i>en</span>
+					<span class="menu__item-desc">A drink made from a mix of algae and other superfoods that provide sustained energy and boost the immune system.</span>
+				</a>
+				<a class="menu__item">
+					<span class="menu__item-title"><i>N</i>euro<i>B</i>oost</span>
+					<span class="menu__item-desc">A cognitive enhancing drink infused with adaptogens, nootropics, and vitamins to enhance focus and mental clarity.</span>
+				</a>
+				<a class="menu__item">
+					<span class="menu__item-title"><i>E</i>co<i>E</i>levate</span>
+					<span class="menu__item-desc">A plant-based energy drink made with maca, matcha, and other plant-based ingredients that help to increase energy levels and reduce stress.</span>
+				</a>
+				<a class="menu__item">
+					<span class="menu__item-title"><i>H</i>erba<i>V</i>igor</span>
+					<span class="menu__item-desc">A natural energy drink made with ginseng, green tea, and other herbal extracts that help increase endurance and reduce fatigue.</span>
+				</a>
+				<a class="menu__item">
+					<span class="menu__item-title"><i>O</i>hm<i>A</i>lchemy</span>
+					<span class="menu__item-desc">A healthy drink made with spirulina, chlorella, and other green superfoods that help detoxify the body and boost energy.</span>
+				</a>
+				<a class="menu__item">
+					<span class="menu__item-title"><i>F</i>ruit<i>F</i>use</span>
+					<span class="menu__item-desc">A fruity drink infused with vitamins and antioxidants that helps to protect the skin from UV damage.</span>
+				</a>
+			</nav>
+		</main>
+		<script src="https://tympanus.net/codrops/adpacks/cda_sponsor.js"></script>
+		<script src="js/gsap.min.js"></script>
+		<script src="js/Flip.min.js"></script>
+		<script src="js/splitting.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script type="module" src="js/index.js"></script>
+	</body>
+</html>
