@@ -15,7 +15,7 @@ Run this demo on a [local server](https://developer.mozilla.org/en-US/docs/Learn
 
 ## Credits
 
-- Images from [Unsplash](https://unsplash.com/)
+- Images generated with [Midjourney](https://midjourney.com/)
 
 ## Misc
 
