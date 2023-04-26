@@ -142,6 +142,11 @@ main {
 	align-self: start;
 	justify-self: start;
 	pointer-events: none;
+	align-items: center;
+}
+
+body #cdawrap {
+    justify-self: start;
 }
 
 .frame a {
@@ -152,7 +157,6 @@ main {
 	white-space: nowrap;
 	overflow: hidden;
 	position: relative;
-	display: inline-block;
 }
 
 .frame a:not(.frame__title-back)::before {
@@ -508,5 +512,8 @@ main {
 	.content__images .thumbgrid {
 		height: 50vh;
 		width: auto;
+	}
+	body #cdawrap {
+	    justify-self: end;
 	}
 }
